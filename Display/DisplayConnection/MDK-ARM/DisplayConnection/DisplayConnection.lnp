@@ -1,0 +1,26 @@
+--cpu=Cortex-M4.fp.sp
+"displayconnection\startup_stm32f407xx.o"
+"displayconnection\main.o"
+"displayconnection\stm32f4xx_it.o"
+"displayconnection\stm32f4xx_hal_msp.o"
+"displayconnection\lcd.o"
+"displayconnection\stm32f4xx_hal_tim.o"
+"displayconnection\stm32f4xx_hal_tim_ex.o"
+"displayconnection\stm32f4xx_hal_rcc.o"
+"displayconnection\stm32f4xx_hal_rcc_ex.o"
+"displayconnection\stm32f4xx_hal_flash.o"
+"displayconnection\stm32f4xx_hal_flash_ex.o"
+"displayconnection\stm32f4xx_hal_flash_ramfunc.o"
+"displayconnection\stm32f4xx_hal_gpio.o"
+"displayconnection\stm32f4xx_hal_dma_ex.o"
+"displayconnection\stm32f4xx_hal_dma.o"
+"displayconnection\stm32f4xx_hal_pwr.o"
+"displayconnection\stm32f4xx_hal_pwr_ex.o"
+"displayconnection\stm32f4xx_hal_cortex.o"
+"displayconnection\stm32f4xx_hal.o"
+"displayconnection\stm32f4xx_hal_exti.o"
+"displayconnection\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "DisplayConnection\DisplayConnection.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "DisplayConnection.map" -o DisplayConnection\DisplayConnection.axf
